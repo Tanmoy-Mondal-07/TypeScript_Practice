@@ -40,3 +40,21 @@ function anotherFunction<T, U extends database>(v1: T, v2: U): object {
 
 // anotherFunction(5, {})
 
+interface Ouiz {
+    name: string,
+    type: string
+}
+
+interface Course {
+    name: string,
+    author: string,
+    subject: string
+}
+
+class Sellable<T> {
+    public cart: T[] = []
+
+    addToCart(products: T) {
+        this.cart.push(products)
+    }
+}
