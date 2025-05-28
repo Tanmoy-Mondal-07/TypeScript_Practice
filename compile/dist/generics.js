@@ -25,4 +25,11 @@ function anotherFunction(v1, v2) {
         v2
     };
 }
-// anotherFunction(5, {})
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(products) {
+        this.cart.push(products);
+    }
+}
